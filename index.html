@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div id="background"></div>
+
+<div id="game-container">
+    <div id="game-rules">
+        <h2>Game Rules</h2>
+        <ul>
+            <li>Connect four of your colored discs horizontally, vertically, or diagonally to win.</li>
+            <li>Players take turns dropping one colored disc from the top into a column.</li>
+            <li>The game ends when there is a winner or the board is full (a tie).</li>
+        </ul>
+    </div>
+
+    <div id="player-turn">Black turn</div>
+    <div id="board"></div>
+    <div id="player1-animation" class="player-animation"></div>
+    <div id="player2-animation" class="player-animation"></div>
+</div>
+
+<div class="winner-overlay" style="display: none;">
+    <div class="winner-message">
+        <h2>Player <span id="winner"></span> wins!</h2>
+        <div class="reset-game">
+            <button id="resetButton">PLAY AGAIN</button>
+        </div>
+    </div>
+</div>
+<button id="clearButton" class="clear-button">Reset Board</button>
+<script src="game.js"></script>
+</body>
+</html>
